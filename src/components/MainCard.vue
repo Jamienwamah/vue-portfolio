@@ -8,19 +8,25 @@
         </div>
         <div class="social-links">
                 <div class="link">
-                    <img src="../assets/github.png" alt="">
-                    <a href="https://www.github.com/oishbdh"><h2>GitHub</h2></a>
+                    <a href="https://www.github.com/oishbdh">
+                        <img src="../assets/github.png" alt="">
+                        <h2>GitHub</h2>
+                    </a>
                 
                 </div>
 
                 <div class="link">
-                    <img src="../assets/linkedin.png" alt="">
-                    <a href="https://www.linkedin.com/in/ikechukwu-n-70890921a"><h2>LinkedIn</h2></a>
+                    <a href="https://www.linkedin.com/in/ikechukwu-n-70890921a">
+                        <img src="../assets/linkedin.png" alt="">
+                        <h2>LinkedIn</h2>
+                </a>
                 
                 </div>
                 <div class="link">
-                    <img src="../assets/fb.png" alt="">
-                    <a href="https://www.facebook.com/iknwamah"><h2>Facebook</h2></a>
+                    <a href="https://www.facebook.com/iknwamah">
+                        <img src="../assets/fb.png" alt="">
+                        <h2>Facebook</h2>
+                    </a>
                 
                 </div>
         
@@ -58,13 +64,14 @@
             </div>
             <div class="button-container">
                 <div class="projects-button">
-                    <a href="">My Projects</a>
+                    <a href="https://github.com/oishbdh/alx-low_level_programming.git">My Projects</a>
+                </div>
+            <div>
+                <div class="projects-button">
+                    <a href="https://eu.docworkspace.com/d/sAKvKXI2ei_ugAZT4v5OupxQ">My Resume</a>
                 </div>
             </div>
-            <div>
-                <a href="">My Resume</a>
-            
-            </div>
+        </div>
 
     
         
@@ -92,12 +99,14 @@ export default {
         display: flex;
         flex-direction: row;
         background-color: #cececece;
+        border-radius: 25px;
     }
 
     .container-one{
         background-color: #ffbeff;
         padding: 2.5%;
         width: 100%;
+        border-radius: 25px;
     }
 
     .profile img{
@@ -105,9 +114,49 @@ export default {
         border-radius: 70%;
     }
 
+    .link a{
+        text-decoration: none;
+        color: #2c3e5a;
+        font-size: 12px;
+
+    }
+
+    .link img{
+        height: 2rem;
+    }
+
     .container-two{
         background-color: #cdc0fc;
+        margin: 2.5%;
         width: 100%;
+    }
+
+    .about-me{
+        text-align: left;
+    }
+
+    .logos img{
+        height: 2.5rem;
+    }
+
+    .button-container {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-button{
+        background-color: #7c58ff;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .projects-button a{
+        text-decoration: none;
+        color: #fff;
     }
 
 </style>
