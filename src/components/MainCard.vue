@@ -1,9 +1,10 @@
 <template>
+<div class="wrapper">
 <div class="main-container">
     <div class ="container-one">
         <div class="profile">
             <img src="../assets/profile.png" alt="">
-            <h3>Name Here</h3>
+            <h3>Ikechukwu Nwamah</h3>
             <p>Software Developer</p>
         </div>
         <div class="social-links">
@@ -69,17 +70,18 @@
             <div>
                 <div class="projects-button">
                     <a href="https://eu.docworkspace.com/d/sAKvKXI2ei_ugAZT4v5OupxQ">My Resume</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
     
         
         
+            </div>
+
+
+
         </div>
-
-
-
     </div>
 </div>
 </template>
@@ -91,19 +93,26 @@ export default {
 </script>
 
 <style scoped>
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
     img{
         height: 20px;
     }
     
     .main-container{
+        margin-top: 5%;
         display: flex;
         flex-direction: row;
         background-color: #cececece;
         border-radius: 25px;
+        width: 60%;
+        background-color: #A804FF;
     }
 
     .container-one{
-        background-color: #ffbeff;
+        background-color: #1292EE;
         padding: 2.5%;
         width: 100%;
         border-radius: 25px;
@@ -148,7 +157,7 @@ export default {
     }
 
     .projects-button{
-        background-color: #7c58ff;
+        background-color: #005CA4;
         border-radius: 15px;
         padding: 5px;
         margin: 5px;
@@ -157,6 +166,12 @@ export default {
     .projects-button a{
         text-decoration: none;
         color: #fff;
+    }
+
+    @media only screen and (max-width: 950px){
+        .main_container{
+            width: 95%;
+        }
     }
 
 </style>
