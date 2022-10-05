@@ -5,27 +5,29 @@
   color="red darken-4"
   dense
   type="success"
->Hello</v-alert><v-btn
+><h1>Portfolio</h1></v-alert><v-btn
   color="red lighten-2"
   elevation="2"
   outlined
   plain
->Click me</v-btn><MainCard /></v-main
+>Click me</v-btn><v-banner
+  color="primary"
+  outlined
+><h1>Welcome to my Portfolio</h1></v-banner><MainCard /></v-main
   ></v-app>
-
-  <!-----<ProjectsCard/>--->
+<!-----ProjectsCard/---->
 </template>
 
 <script>
 import MainCard from "./components/MainCard.vue";
 import Vue from "vue";
-// import ProjectsCard from './components/ProjectsCard.vue'
+//import ProjectsCard from './components/ProjectsCard.vue'
 
 export default Vue.extend({
   name: "App",
   components: {
     MainCard
-    // ProjectsCard,
+    //ProjectsCard
   }
 });
 </script>
